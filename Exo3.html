@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>TP2</title>
+   
+    
+<style>
+            {
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+
+            body{
+
+                font-family: Arial, sans-serif;
+            }
+
+
+    .container{
+        display:grid;
+        grid-template-areas:
+            "bandeau bandeau bandeau"
+            "menuhaut contenu contenu"
+            "menubas contenu contenu"
+            "pieddepage pieddepage pieddepage";
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto 1fr 1fr auto;
+        height: 100vh;
+        font-size: 100%;
+
+    }
+    .bandeau{
+        grid-area: bandeau;
+        background-color: gold;
+        text-align: center;
+        padding: 20px;
+        font-size: 1000%;
+        
+    }
+    .contenu {
+        grid-area: contenu;
+        background-color: grey;
+        text-align: center;
+        width: 100%;
+        font-size: 1000%;
+    }
+    .pied-de-page {
+        grid-area: pieddepage;
+        background-color: yellow;
+        text-align: center;
+        padding: 20px;
+        font-size: 1000%;
+    }
+    .menu-haut {
+        grid-area: menuhaut;
+        background-color: green;
+        padding: 20px;
+        font-size: 1000%;
+    }
+    .menu-bas{
+        grid-area: menubas;
+        background-color: purple;
+        padding: 20px;
+        font-size: 1000%;
+
+    }
+    .bloc-news{
+        grid-area: blocnews;
+        background-color: red;
+        padding: 20px;
+        height:150px;
+        width: 150px;
+        float: right;
+        font-size: 1000%;
+    }
+</style>
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div class="container">
+            <div class="bandeau">Bandeau</div>
+            <div class="menu-haut">Menu haut</div>
+            <div class="menu-bas">Menu bas</div>
+            <div class="contenu">
+                <div class="texte">
+                    <div class="bloc news"></div>
+                    Bonjour Bonjour Bonjour Bonjour Bonjour 
+                    Bonjour Bonjour BonjourBonjour Bonjour 
+                    Bonjour Bonjour Bonjour Bonjour Bonjour 
+                    Bonjour Bonjour BonjourBonjour Bonjour Bonjour Bonjour Bonjour Bonjour Bonjour 
+
+                </div>
+            </div>
+            <div class="pied-de-page">Pied de page</div>
+        </div>
+
+    
+    
+    
+</body>
+</html>
